@@ -1,0 +1,784 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mauricio Manzanera Jaramillo | Red Global Consultorías S.A.S. — Mundo Mejor (Versión 5)</title>
+  <meta name="description" content="Presidente de Red Global Consultorías S.A.S. Soluciones Ecológicas: el sistema aprende del error sin penalizar a sus actores. Más de 20 años en negociación directiva y PNL.">
+  <meta name="author" content="Mauricio Manzanera Jaramillo">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Mauricio Manzanera | Red Global Consultorías S.A.S. — Mundo Mejor">
+  <meta property="og:description" content="Soluciones Ecológicas Organizacionales y Negociación de Alto Nivel.">
+  <meta property="og:image" content="assets/images/logo-blackwhite-dark.svg">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Syne:wght@700;800&display=swap" rel="stylesheet">
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            bwBlack: '#05070D',
+            bwCard: '#0F1424',
+            bwWhite: '#FFFFFF'
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="assets/css/custom.css">
+
+  <!-- Schema.org JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Mauricio Manzanera Jaramillo",
+    "jobTitle": "Presidente & Solutions Consultant",
+    "worksFor": {
+      "@type": "Organization",
+      "name": "Red Global Consultorías S.A.S.",
+      "slogan": "Mundo Mejor"
+    },
+    "alumniOf": [
+      { "@type": "CollegeOrUniversity", "name": "Pontificia Universidad Javeriana" },
+      { "@type": "CollegeOrUniversity", "name": "Universidad de los Andes" },
+      { "@type": "CollegeOrUniversity", "name": "City College of London" }
+    ],
+    "sameAs": [
+      "https://www.linkedin.com/in/mauriciomanzanera",
+      "https://www.facebook.com/mauriciomanzanera",
+      "https://www.instagram.com/mauriciomanzanera",
+      "https://www.youtube.com/@mauriciomanzanera"
+    ],
+    "telephone": "+573182664266"
+  }
+  </script>
+</head>
+<body class="bg-[#05070D] text-slate-200 antialiased relative min-h-screen bg-monochrome-grid">
+
+  <!-- ==========================================================================
+       HEADER CORPORATIVO MONOCROMÁTICO (LOGO CON SU LEYENDA 100% NÍTIDO)
+       ========================================================================== -->
+  <header class="sticky top-0 z-50 bg-[#05070D]/95 backdrop-blur-md border-b border-white/10 transition-all">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-24 flex items-center justify-between">
+      
+      <!-- LOGO CON SU LEYENDA (VECTORIZADO EN ALTA DEFINICIÓN) -->
+      <a href="#" class="flex items-center gap-3 group">
+        <div class="h-14 flex items-center">
+          <img src="assets/images/logo-blackwhite-horizontal.svg" alt="Red Global Consultorías - Mundo Mejor" class="h-full w-auto object-contain filter drop-shadow">
+        </div>
+      </a>
+
+      <!-- Navegación Desktop -->
+      <nav class="hidden lg:flex items-center gap-7 text-xs font-bold uppercase tracking-wider text-slate-300">
+        <a href="#hero" data-i18n="nav_inicio" class="hover:text-white transition">Inicio</a>
+        <a href="#filosofia" data-i18n="nav_quienes" class="hover:text-white transition">Quiénes Somos</a>
+        <a href="#soluciones" data-i18n="nav_soluciones" class="hover:text-white transition">Soluciones Ecológicas</a>
+        <a href="#metodo" data-i18n="nav_metodo" class="hover:text-white transition">El Método</a>
+        <a href="#credenciales" data-i18n="nav_credenciales" class="hover:text-white transition">Trayectoria</a>
+        <button class="open-crm-btn text-slate-300 hover:text-white flex items-center gap-1.5 transition" title="Panel CRM de Captura">
+          <i data-lucide="database" class="w-3.5 h-3.5"></i>
+          <span data-i18n="nav_crm">CRM</span>
+        </button>
+      </nav>
+
+      <!-- Selector de Idiomas & Botón Blanco Puro -->
+      <div class="flex items-center gap-3.5">
+        <!-- 5 Idiomas -->
+        <div class="flex items-center bg-white/5 border border-white/15 rounded-full p-1 text-[11px] font-mono">
+          <button data-lang="es" class="lang-btn active px-2.5 py-0.5 rounded-full text-slate-300 hover:text-white">ES</button>
+          <button data-lang="en" class="lang-btn px-2.5 py-0.5 rounded-full text-slate-300 hover:text-white">EN</button>
+          <button data-lang="fr" class="lang-btn px-2.5 py-0.5 rounded-full text-slate-300 hover:text-white">FR</button>
+          <button data-lang="it" class="lang-btn px-2.5 py-0.5 rounded-full text-slate-300 hover:text-white">IT</button>
+          <button data-lang="ar" class="lang-btn px-2.5 py-0.5 rounded-full text-slate-300 hover:text-white">AR</button>
+        </div>
+
+        <!-- Botón Diagnóstico Gratuito (White Pill) -->
+        <button class="open-diagnostic-btn btn-bw-white text-xs uppercase tracking-wide">
+          <i data-lucide="sparkles" class="w-4 h-4"></i>
+          <span class="hidden sm:inline" data-i18n="btn_cta_diagnostico">Diagnóstico Gratuito</span>
+          <span class="sm:hidden">Diagnóstico</span>
+        </button>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- ==========================================================================
+       HERO SECTION (ESTRUCTURA GLOBAL RED SAS + CONTRASTE NEGRO Y BLANCO)
+       ========================================================================== -->
+  <section id="hero" class="relative pt-12 pb-20 md:pt-16 md:pb-24 border-b border-white/10 overflow-hidden">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        
+        <!-- Columna Izquierda: Mensaje Central & Redes Sociales Legibles -->
+        <div class="lg:col-span-7">
+          
+          <!-- Tag Badge Monocromático -->
+          <div class="inline-flex items-center gap-2.5 px-3.5 py-1.5 rounded-full bg-white/5 border border-white/20 text-white text-xs font-semibold tracking-wide mb-6">
+            <span class="w-2 h-2 rounded-full bg-white animate-ping"></span>
+            <span data-i18n="hero_tag">SOLUCIONES ECOLÓGICAS Y MEJORAMIENTO CONTINUO</span>
+          </div>
+
+          <!-- Gran Título Editorial en Blanco Puro -->
+          <h1 class="text-3xl sm:text-4xl lg:text-[3.25rem] font-extrabold text-white tracking-tight leading-[1.14] mb-6">
+            <span data-i18n="hero_title">Estrategia Global, Negociación de Alto Nivel y Soluciones Ecológicas.</span>
+          </h1>
+
+          <p data-i18n="hero_subtitle" class="text-base sm:text-lg text-slate-300 leading-relaxed font-normal max-w-2xl mb-8">
+            Presidente de Red Global Consultorías S.A.S. Desarrollamos soluciones donde el error ocurrido en el sistema se convierte en el proceso de aprendizaje para remediar y entrar en Mejora Continua, sin penalizar a sus actores y salvaguardando la inversión.
+          </p>
+
+          <!-- Botones de Acción (Blanco Sólido & Contorno Vidrio) -->
+          <div class="flex flex-wrap items-center gap-4 mb-9">
+            <button class="open-diagnostic-btn btn-bw-white">
+              <i data-lucide="clipboard-check" class="w-4 h-4"></i>
+              <span data-i18n="btn_cta_diagnostico">Solicitar Diagnóstico Gratuito</span>
+            </button>
+
+            <a href="https://wa.me/573182664266?text=Hola%20Mauricio,%20he%20visto%20la%20plataforma%20de%20Red%20Global%20Consultor%C3%ADas%20y%20deseo%20una%20reuni%C3%B3n." target="_blank" class="btn-bw-outline">
+              <i data-lucide="message-circle" class="w-4 h-4 text-emerald-400"></i>
+              <span data-i18n="btn_cta_whatsapp">WhatsApp (+57 318 266 4266)</span>
+            </a>
+          </div>
+
+          <!-- BOTONES DE REDES SOCIALES 100% LEGIBLES -->
+          <div class="pt-6 border-t border-white/10">
+            <div class="text-xs uppercase font-mono tracking-wider text-slate-400 mb-3">
+              Perfiles Verificados & Canales Oficiales:
+            </div>
+            <div class="flex flex-wrap items-center gap-2.5">
+              
+              <!-- LinkedIn -->
+              <a href="https://www.linkedin.com/in/mauriciomanzanera" target="_blank" class="social-badge-item linkedin" title="Ver LinkedIn Mauricio Manzanera">
+                <i data-lucide="linkedin" class="w-4 h-4"></i>
+                <span>LinkedIn /in/mauriciomanzanera</span>
+              </a>
+
+              <!-- Facebook -->
+              <a href="https://www.facebook.com/mauriciomanzanera" target="_blank" class="social-badge-item facebook" title="Ver Facebook @mauriciomanzanera">
+                <i data-lucide="facebook" class="w-4 h-4"></i>
+                <span>FaceBook @mauriciomanzanera</span>
+              </a>
+
+              <!-- Instagram -->
+              <a href="https://www.instagram.com/mauriciomanzanera" target="_blank" class="social-badge-item instagram" title="Ver Instagram @mauriciomanzanera">
+                <i data-lucide="instagram" class="w-4 h-4"></i>
+                <span>Instagram @mauriciomanzanera</span>
+              </a>
+
+              <!-- YouTube -->
+              <a href="https://www.youtube.com/@mauriciomanzanera" target="_blank" class="social-badge-item youtube" title="Ver YouTube Mauricio Manzanera">
+                <i data-lucide="youtube" class="w-4 h-4"></i>
+                <span>YouTube Mauricio Manzanera</span>
+              </a>
+
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Columna Derecha: Tarjetas Bento Monocromáticas + Tarjeta del Logo con su Leyenda -->
+        <div class="lg:col-span-5">
+          <div class="grid grid-cols-2 gap-4">
+            
+            <div class="bento-card-bw">
+              <div class="w-9 h-9 rounded-lg bg-white/10 text-white flex items-center justify-center mb-3">
+                <i data-lucide="award" class="w-5 h-5"></i>
+              </div>
+              <div data-i18n="stats_years" class="text-2xl sm:text-3xl font-extrabold text-white font-['Syne']">+20 Años</div>
+              <div data-i18n="stats_years_sub" class="text-xs uppercase font-mono text-slate-400 mt-1">Trayectoria Multilateral</div>
+            </div>
+
+            <div class="bento-card-bw">
+              <div class="w-9 h-9 rounded-lg bg-white/10 text-white flex items-center justify-center mb-3">
+                <i data-lucide="handshake" class="w-5 h-5"></i>
+              </div>
+              <div data-i18n="stats_deals" class="text-2xl sm:text-3xl font-extrabold text-white font-['Syne']">+150 Acuerdos</div>
+              <div data-i18n="stats_deals_sub" class="text-xs uppercase font-mono text-slate-400 mt-1">Negociaciones en Juntas</div>
+            </div>
+
+            <div class="bento-card-bw">
+              <div class="w-9 h-9 rounded-lg bg-white/10 text-white flex items-center justify-center mb-3">
+                <i data-lucide="globe" class="w-5 h-5"></i>
+              </div>
+              <div data-i18n="stats_languages" class="text-2xl sm:text-3xl font-extrabold text-white font-['Syne']">5 Idiomas</div>
+              <div data-i18n="stats_languages_sub" class="text-xs uppercase font-mono text-slate-400 mt-1">Negociación Global</div>
+            </div>
+
+            <div class="bento-card-bw">
+              <div class="w-9 h-9 rounded-lg bg-white/10 text-white flex items-center justify-center mb-3">
+                <i data-lucide="shield-check" class="w-5 h-5"></i>
+              </div>
+              <div data-i18n="stats_confidential" class="text-2xl sm:text-3xl font-extrabold text-white font-['Syne']">100% Ético</div>
+              <div data-i18n="stats_confidential_sub" class="text-xs uppercase font-mono text-slate-400 mt-1">Gobernanza y Sostenible</div>
+            </div>
+
+          </div>
+
+          <!-- TARJETA OFICIAL DEL CLIENTE: EL LOGO CON SU LEYENDA -->
+          <div class="mt-4 p-6 rounded-2xl bg-[#0A0E1A] border border-white/15 text-center">
+            <div class="max-w-[280px] mx-auto py-2">
+              <img src="assets/images/logo-blackwhite-dark.svg" alt="Logo con Leyenda Red Global Consultorías Mundo Mejor" class="w-full h-auto object-contain filter drop-shadow-md">
+            </div>
+            <div class="pt-3 border-t border-white/10 flex items-center justify-between text-xs text-slate-400 font-mono">
+              <span>Mauricio Manzanera Jaramillo</span>
+              <span class="text-white">Bogotá • Londres</span>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       SECCIÓN 1: FILOSOFÍA DE LA SOLUCIÓN ECOLÓGICA
+       ========================================================================== -->
+  <section id="filosofia" class="py-24 border-b border-white/10 bg-[#070A14]">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="max-w-3xl mb-14">
+        <span class="text-xs font-mono font-bold tracking-widest text-slate-400 uppercase">PROPUESTA DE VALOR CORPORATIVA</span>
+        <h2 data-i18n="philosophy_title" class="text-2xl sm:text-4xl font-extrabold text-white mt-2 mb-3">
+          La Filosofía de la Solución Ecológica
+        </h2>
+        <p data-i18n="philosophy_subtitle" class="text-slate-400 text-base">
+          Inspirados en los estándares de las grandes consultoras globales (McKinsey & Company, BCG, Accenture).
+        </p>
+      </div>
+
+      <!-- Cita Central de Mauricio Manzanera -->
+      <div class="p-8 sm:p-10 rounded-2xl bg-[#0D1222] border border-white/15 shadow-2xl mb-14 relative overflow-hidden">
+        <p class="text-lg sm:text-xl text-white font-medium leading-relaxed italic mb-6">
+          «Ofrecemos Soluciones Ecológicas en todo lo que hacemos. Eso significa que ninguno de los actores o elementos en nuestras soluciones pagan por los errores cometidos en los procesos. Todo lo contrario: al haberse cometido en el sistema, de la misma manera será el proceso de aprendizaje para remediar y entrar en la estrategia del Mejoramiento Continuo. Es la mejor manera de salvaguardar la inversión, ser coherente con lo planeado y consecuente con el proceso de aprendizaje.»
+        </p>
+        <div class="flex items-center gap-3">
+          <div class="w-10 h-10 rounded-full bg-white text-black font-bold flex items-center justify-center">MM</div>
+          <div>
+            <div class="font-bold text-white text-sm">Mauricio Manzanera Jaramillo</div>
+            <div class="text-xs text-slate-400">Presidente de Red Global Consultorías S.A.S. • "Mundo Mejor"</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 4 Pilares de Intervención -->
+      <div id="soluciones" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        
+        <div class="bento-card-bw">
+          <div class="w-10 h-10 rounded-lg bg-white/10 text-white flex items-center justify-center mb-4">
+            <i data-lucide="brain" class="w-5 h-5"></i>
+          </div>
+          <h3 class="font-bold text-white text-base mb-2">Negociación & PNL</h3>
+          <p class="text-slate-400 text-xs leading-relaxed">
+            Resolución de conflictos societarios y mediación en juntas directivas aplicando Programación Neurolingüística para desbloquear acuerdos.
+          </p>
+        </div>
+
+        <div class="bento-card-bw">
+          <div class="w-10 h-10 rounded-lg bg-white/10 text-white flex items-center justify-center mb-4">
+            <i data-lucide="leaf" class="w-5 h-5"></i>
+          </div>
+          <h3 class="font-bold text-white text-base mb-2">Solución Ecológica</h3>
+          <p class="text-slate-400 text-xs leading-relaxed">
+            El error se aborda como una propiedad del sistema. Se rediseñan procesos sin penalizar al personal, asegurando mejora continua.
+          </p>
+        </div>
+
+        <div class="bento-card-bw">
+          <div class="w-10 h-10 rounded-lg bg-white/10 text-white flex items-center justify-center mb-4">
+            <i data-lucide="globe-2" class="w-5 h-5"></i>
+          </div>
+          <h3 class="font-bold text-white text-base mb-2">Expansión Multilateral</h3>
+          <p class="text-slate-400 text-xs leading-relaxed">
+            Puentes diplomáticos y de inversión entre América Latina, Reino Unido y Medio Oriente con dominio de 5 idiomas.
+          </p>
+        </div>
+
+        <div class="bento-card-bw">
+          <div class="w-10 h-10 rounded-lg bg-white/10 text-white flex items-center justify-center mb-4">
+            <i data-lucide="shield-check" class="w-5 h-5"></i>
+          </div>
+          <h3 class="font-bold text-white text-base mb-2">Gobernanza ESG</h3>
+          <p class="text-slate-400 text-xs leading-relaxed">
+            Estructuración ética, transparencia institucional y sostenibilidad de largo plazo para salvaguardar el patrimonio corporativo.
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       SECCIÓN 2: EL MÉTODO RED GLOBAL (4 ETAPAS)
+       ========================================================================== -->
+  <section id="metodo" class="py-24 border-b border-white/10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-2xl mx-auto mb-16">
+        <span class="text-xs font-mono font-bold tracking-widest text-slate-400 uppercase">ARQUITECTURA DE REMEDIACIÓN</span>
+        <h2 class="text-2xl sm:text-4xl font-extrabold text-white mt-2">El Método Manzanera en 4 Pasos</h2>
+        <p class="text-slate-400 text-sm mt-3">Para cualquier organización que sabe que algo anda mal pero no sabe qué es o cómo remediarlo.</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
+        
+        <div class="bento-card-bw">
+          <span class="text-3xl font-extrabold text-white font-mono">01</span>
+          <h3 class="font-bold text-white text-lg mt-2 mb-2">Diagnóstico Inmersivo</h3>
+          <p class="text-slate-400 text-xs leading-relaxed">
+            Auditoría confidencial de actitudes, procesos y resultados para localizar la raíz sistémica de la fricción.
+          </p>
+        </div>
+
+        <div class="bento-card-bw">
+          <span class="text-3xl font-extrabold text-white font-mono">02</span>
+          <h3 class="font-bold text-white text-lg mt-2 mb-2">Solución Ecológica</h3>
+          <p class="text-slate-400 text-xs leading-relaxed">
+            Rediseño de flujos de trabajo donde los errores pasados se transforman en conocimiento formalizado sin culpables.
+          </p>
+        </div>
+
+        <div class="bento-card-bw">
+          <span class="text-3xl font-extrabold text-white font-mono">03</span>
+          <h3 class="font-bold text-white text-lg mt-2 mb-2">Mediación & PNL</h3>
+          <p class="text-slate-400 text-xs leading-relaxed">
+            Alineación psicológica y comunicativa de la junta directiva, socios y líderes operativos para restaurar la confianza.
+          </p>
+        </div>
+
+        <div class="bento-card-bw">
+          <span class="text-3xl font-extrabold text-white font-mono">04</span>
+          <h3 class="font-bold text-white text-lg mt-2 mb-2">Mejora Continua</h3>
+          <p class="text-slate-400 text-xs leading-relaxed">
+            Monitoreo de KPIs de rentabilidad, salvaguarda de la inversión y aseguramiento de coherencia a largo plazo.
+          </p>
+        </div>
+
+      </div>
+
+      <!-- Banner Diagnóstico Gratuito -->
+      <div class="mt-14 p-8 rounded-2xl bg-[#0D1222] border border-white/20 flex flex-col md:flex-row items-center justify-between gap-6">
+        <div>
+          <h3 class="text-xl sm:text-2xl font-bold text-white">¿Siente que algo no está funcionando en su organización?</h3>
+          <p class="text-slate-300 text-sm mt-1">Acceda a nuestra oferta especial de Diagnóstico Inicial Gratuito sin costo ni compromiso.</p>
+        </div>
+        <button class="open-diagnostic-btn btn-bw-white text-xs uppercase tracking-wider whitespace-nowrap">
+          Solicitar Diagnóstico Sin Costo
+        </button>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       SECCIÓN 3: RIGOR ACADÉMICO Y CARGOS DIRECTIVOS
+       ========================================================================== -->
+  <section id="credenciales" class="py-24 border-b border-white/10 bg-[#070A14]">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="max-w-3xl mb-14">
+        <span class="text-xs font-mono font-bold tracking-widest text-slate-400 uppercase">TRAYECTORIA DE CLASE MUNDIAL</span>
+        <h2 class="text-2xl sm:text-4xl font-extrabold text-white mt-2">Rigor Académico y Liderazgo</h2>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        
+        <div class="bento-card-bw">
+          <h3 class="text-lg font-bold text-white mb-6 flex items-center gap-2">
+            <i data-lucide="graduation-cap" class="w-5 h-5 text-white"></i>
+            Formación Académica Verificada
+          </h3>
+
+          <div class="space-y-6">
+            <div class="border-l-2 border-white pl-4">
+              <div class="font-bold text-white">Pontificia Universidad Javeriana</div>
+              <div class="text-xs font-mono text-slate-300">Administrador de Empresas (Graduado 2002)</div>
+              <div class="text-xs text-slate-400 mt-1">Fundamentos sólidos de administración corporativa y finanzas.</div>
+            </div>
+
+            <div class="border-l-2 border-white pl-4">
+              <div class="font-bold text-white">Universidad de los Andes</div>
+              <div class="text-xs font-mono text-slate-300">Estudios en Ingeniería Industrial</div>
+              <div class="text-xs text-slate-400 mt-1">Optimización de procesos, sistemas complejos y modelado operativo.</div>
+            </div>
+
+            <div class="border-l-2 border-white pl-4">
+              <div class="font-bold text-white">City College of London (Londres, Reino Unido)</div>
+              <div class="text-xs font-mono text-slate-300">Contabilidad y Finanzas Internacionales</div>
+              <div class="text-xs text-slate-400 mt-1">Normativa financiera europea y estructuración fiscal de transacciones.</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="bento-card-bw">
+          <h3 class="text-lg font-bold text-white mb-6 flex items-center gap-2">
+            <i data-lucide="briefcase" class="w-5 h-5 text-white"></i>
+            Liderazgo Ejecutivo Internacional
+          </h3>
+
+          <div class="space-y-6">
+            <div class="border-l-2 border-white pl-4">
+              <div class="font-bold text-white">Presidente & Solutions Consultant</div>
+              <div class="text-xs font-mono text-slate-300">Red Global Consultorías S.A.S. (Mundo Mejor)</div>
+              <div class="text-xs text-slate-400 mt-1">
+                Liderazgo de proyectos de consultoría en remediación organizacional, PNL aplicada y sostenibilidad ESG.
+              </div>
+            </div>
+
+            <div class="border-l-2 border-white pl-4">
+              <div class="font-bold text-white">Ex-Vicepresidente de Ventas & Marketing</div>
+              <div class="text-xs font-mono text-slate-300">I.B.R. Ltda. (Londres, Reino Unido & Medellín, Colombia)</div>
+              <div class="text-xs text-slate-400 mt-1">
+                Dirección de operaciones comerciales internacionales, apertura de mercados y gestión de equipos multiculturales.
+              </div>
+            </div>
+
+            <div class="border-l-2 border-white pl-4">
+              <div class="font-bold text-white">Misiones Comerciales en Oriente Medio</div>
+              <div class="text-xs font-mono text-slate-300">Negociación Multilateral en Idioma Árabe e Inglés</div>
+              <div class="text-xs text-slate-400 mt-1">
+                Cierre de acuerdos bilaterales de inversión en entornos de alta exigencia protocolar y cultural.
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       SECCIÓN 4: CALENDARIO DE AGENDAMIENTO DIRECTIVO
+       ========================================================================== -->
+  <section id="agenda" class="py-24 border-b border-white/10">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center mb-12">
+        <span class="text-xs font-mono font-bold tracking-widest text-slate-400 uppercase">COORDINACIÓN DIRECTA</span>
+        <h2 class="text-2xl sm:text-3xl font-extrabold text-white mt-2">
+          Reserve su Sesión de Asesoría Directiva
+        </h2>
+        <p class="text-slate-400 text-sm mt-2">30 minutos de consulta confidencial vía Google Meet o presencial en Bogotá.</p>
+      </div>
+
+      <div class="bento-card-bw p-6 sm:p-8">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          
+          <div>
+            <label class="block text-xs font-semibold uppercase text-slate-300 mb-2">Seleccione una Fecha:</label>
+            <input type="date" id="booking-date" class="w-full bg-slate-900 border border-slate-700 rounded-lg px-4 py-3 text-white text-sm focus:outline-none focus:border-white">
+            
+            <label class="block text-xs font-semibold uppercase text-slate-300 mt-5 mb-2">Franja Horaria Disponible:</label>
+            <div class="grid grid-cols-2 gap-2 text-xs font-mono">
+              <button type="button" class="slot-btn border border-slate-700 rounded-lg p-2.5 text-center text-slate-300 hover:border-white hover:text-white transition">09:00 AM</button>
+              <button type="button" class="slot-btn border border-slate-700 rounded-lg p-2.5 text-center text-slate-300 hover:border-white hover:text-white transition">11:30 AM</button>
+              <button type="button" class="slot-btn border border-slate-700 rounded-lg p-2.5 text-center text-slate-300 hover:border-white hover:text-white transition">02:30 PM</button>
+              <button type="button" class="slot-btn border border-slate-700 rounded-lg p-2.5 text-center text-slate-300 hover:border-white hover:text-white transition">04:30 PM</button>
+            </div>
+          </div>
+
+          <div class="flex flex-col justify-between">
+            <div>
+              <label class="block text-xs font-semibold uppercase text-slate-300 mb-2">Tema Principal a Tratar:</label>
+              <select id="booking-topic" class="w-full bg-slate-900 border border-slate-700 rounded-lg px-4 py-3 text-white text-sm focus:outline-none focus:border-white mb-4">
+                <option value="Conflicto Societario o Junta">Conflicto Societario o Junta Directiva</option>
+                <option value="Soluciones Ecológicas & Procesos">Soluciones Ecológicas y Rediseño de Procesos</option>
+                <option value="Diagnóstico Inicial Gratuito">Diagnóstico Inicial de la Organización</option>
+                <option value="Expansión Internacional">Expansión Multilateral de Negocios</option>
+              </select>
+
+              <label class="block text-xs font-semibold uppercase text-slate-300 mb-2">Su Nombre y Teléfono:</label>
+              <input type="text" id="booking-contact" placeholder="Ej: Dr. Carlos Mejía / +57 300 000 0000" class="w-full bg-slate-900 border border-slate-700 rounded-lg px-4 py-3 text-white text-sm focus:outline-none focus:border-white">
+            </div>
+
+            <button type="button" id="confirm-booking-btn" class="mt-6 w-full btn-bw-white justify-center">
+              <i data-lucide="calendar" class="w-4 h-4"></i>
+              Confirmar Reserva por WhatsApp
+            </button>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       FOOTER CORPORATIVO
+       ========================================================================== -->
+  <footer class="bg-[#030408] py-14">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="flex flex-col md:flex-row items-center justify-between gap-8 mb-10">
+        
+        <div class="flex items-center gap-3.5">
+          <img src="assets/images/logo-blackwhite-horizontal.svg" alt="Red Global Consultorías - Mundo Mejor" class="h-10 w-auto object-contain">
+        </div>
+
+        <div class="flex flex-wrap items-center gap-3">
+          <a href="https://www.linkedin.com/in/mauriciomanzanera" target="_blank" class="social-badge-item linkedin">
+            <i data-lucide="linkedin" class="w-4 h-4"></i>
+            <span>LinkedIn</span>
+          </a>
+          <a href="https://www.facebook.com/mauriciomanzanera" target="_blank" class="social-badge-item facebook">
+            <i data-lucide="facebook" class="w-4 h-4"></i>
+            <span>Facebook</span>
+          </a>
+          <a href="https://www.instagram.com/mauriciomanzanera" target="_blank" class="social-badge-item instagram">
+            <i data-lucide="instagram" class="w-4 h-4"></i>
+            <span>Instagram</span>
+          </a>
+          <a href="https://www.youtube.com/@mauriciomanzanera" target="_blank" class="social-badge-item youtube">
+            <i data-lucide="youtube" class="w-4 h-4"></i>
+            <span>YouTube</span>
+          </a>
+        </div>
+
+      </div>
+
+      <div class="pt-8 border-t border-white/10 flex flex-col sm:flex-row items-center justify-between text-xs text-slate-400 gap-4">
+        <p data-i18n="footer_copy">© 2026 Mauricio Manzanera Jaramillo. Todos los derechos reservados. Red Global Consultorías S.A.S. — Mundo Mejor.</p>
+        <div class="flex items-center gap-4">
+          <button class="open-crm-btn text-white hover:underline">Acceso CRM Directivo</button>
+          <span>•</span>
+          <span>Bogotá, Colombia • Londres, UK</span>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- ==========================================================================
+       BOTÓN FLOTANTE DE WHATSAPP (A LA IZQUIERDA)
+       ========================================================================== -->
+  <a href="https://wa.me/573182664266?text=Hola%20Mauricio,%20te%20contacto%20desde%20tu%20sitio%20web%20para%20solicitar%20asesor%C3%ADa." target="_blank" class="whatsapp-float-btn" title="Contactar por WhatsApp">
+    <span class="whatsapp-pulse"></span>
+    <i data-lucide="message-circle" class="w-5 h-5"></i>
+    <span class="hidden sm:inline">WhatsApp (+57 318 266 4266)</span>
+  </a>
+
+  <!-- ==========================================================================
+       BOTÓN FUNCIONAL "HABLA CON MAURO" (VOZ Y TEXTO - A LA DERECHA)
+       ========================================================================== -->
+  <div class="chatbot-float-btn">
+    <button id="chat-toggle-btn" class="chatbot-btn-inner flex items-center gap-3 px-5 py-3.5 rounded-full font-bold">
+      <div class="w-8 h-8 rounded-full bg-black text-white flex items-center justify-center">
+        <i data-lucide="bot" class="w-5 h-5"></i>
+      </div>
+      <div class="text-left leading-tight hidden sm:block">
+        <div class="text-xs font-bold text-black">Habla con Mauro</div>
+        <div class="text-[10px] text-slate-600 font-mono">Texto y Voz en Vivo</div>
+      </div>
+    </button>
+  </div>
+
+  <!-- ==========================================================================
+       MODAL 1: CHATBOT DE VOZ Y TEXTO 100% OPERATIVO
+       ========================================================================== -->
+  <div id="chat-modal" class="fixed inset-0 z-[1000] modal-overlay flex items-center justify-center p-4 hidden">
+    <div class="bg-[#0A0E1A] border border-white/20 rounded-2xl w-full max-w-lg shadow-2xl overflow-hidden flex flex-col h-[580px]">
+      
+      <!-- Cabecera -->
+      <div class="bg-[#0F1424] p-4 border-b border-white/10 flex items-center justify-between">
+        <div class="flex items-center gap-3">
+          <div class="w-10 h-10 rounded-full bg-white text-black font-bold flex items-center justify-center text-sm">MM</div>
+          <div>
+            <div data-i18n="chat_header_title" class="font-bold text-white text-sm">Mauricio Manzanera — Asesor Virtual</div>
+            <div data-i18n="chat_status" class="text-[11px] text-emerald-400 flex items-center gap-1.5 font-mono">
+              <span class="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-ping"></span>
+              En línea | Voz y Texto Activo
+            </div>
+          </div>
+        </div>
+        <button id="chat-close-btn" class="text-slate-400 hover:text-white p-1">
+          <i data-lucide="x" class="w-5 h-5"></i>
+        </button>
+      </div>
+
+      <!-- Preguntas Rápidas -->
+      <div class="bg-[#060810] px-4 py-2 border-b border-white/10 flex gap-2 overflow-x-auto text-[11px] no-scrollbar">
+        <button class="quick-q-btn bg-white/10 hover:bg-white/20 text-white px-3 py-1 rounded-full whitespace-nowrap">¿Qué es una Solución Ecológica?</button>
+        <button class="quick-q-btn bg-white/10 hover:bg-white/20 text-white px-3 py-1 rounded-full whitespace-nowrap">¿Cómo aplica la PNL?</button>
+        <button class="quick-q-btn bg-white/10 hover:bg-white/20 text-white px-3 py-1 rounded-full whitespace-nowrap">¿Cómo agendar cita?</button>
+      </div>
+
+      <!-- Mensajes -->
+      <div id="chat-messages" class="flex-1 p-4 overflow-y-auto space-y-3 text-sm">
+        <div class="flex justify-start mb-3">
+          <div data-i18n="chat_welcome" class="bg-[#151c32] text-slate-100 border border-white/10 rounded-2xl rounded-tl-none px-4 py-2.5 max-w-[85%] text-sm shadow-md">
+            Hola, le habla el asesor corporativo de Mauricio Manzanera. ¿Qué desafío o negociación requiere evaluar en su organización? Puede escribir o pulsar el micrófono para hablar.
+          </div>
+        </div>
+      </div>
+
+      <!-- Controles de Input y Micrófono -->
+      <div class="p-3 bg-[#060810] border-t border-white/10 flex items-center gap-2">
+        <button id="chat-mic-btn" class="bg-white text-black p-2.5 rounded-xl hover:bg-slate-200 transition" title="Hablar por Micrófono (Web Speech API)">
+          <i data-lucide="mic" class="w-5 h-5"></i>
+        </button>
+        <input type="text" id="chat-input" placeholder="Escriba su consulta o hable..." class="flex-1 bg-slate-900 border border-slate-700 rounded-xl px-4 py-2.5 text-white text-sm focus:outline-none focus:border-white">
+        <button id="chat-send-btn" class="bg-white text-black p-2.5 rounded-xl hover:bg-slate-200 transition font-bold" title="Enviar">
+          <i data-lucide="send" class="w-5 h-5"></i>
+        </button>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       MODAL 2: DIAGNÓSTICO INICIAL GRATUITO
+       ========================================================================== -->
+  <div id="diagnostic-modal" class="fixed inset-0 z-[1000] modal-overlay flex items-center justify-center p-4 hidden">
+    <div class="bg-[#0A0E1A] border border-white/20 rounded-2xl w-full max-w-lg shadow-2xl overflow-hidden p-6 sm:p-8">
+      
+      <div class="flex items-center justify-between mb-6">
+        <div>
+          <h3 data-i18n="diag_modal_title" class="font-['Syne'] font-extrabold text-xl text-white">
+            Diagnóstico Organizacional Inicial (Gratuito)
+          </h3>
+          <p data-i18n="diag_modal_sub" class="text-xs text-slate-400 mt-1">
+            Complete la información y reciba una evaluación confidencial directa con Mauricio Manzanera.
+          </p>
+        </div>
+        <button id="close-diagnostic-btn" class="text-slate-400 hover:text-white p-1">
+          <i data-lucide="x" class="w-5 h-5"></i>
+        </button>
+      </div>
+
+      <form id="diagnostic-form" class="space-y-4">
+        <div>
+          <label class="block text-xs font-semibold text-slate-300 uppercase mb-1">Nombre Completo:</label>
+          <input type="text" id="diag-name" required placeholder="Ej: Dr. Alejandro Valencia" class="w-full bg-slate-900 border border-slate-700 rounded-xl px-4 py-2.5 text-white text-sm focus:outline-none focus:border-white">
+        </div>
+
+        <div>
+          <label class="block text-xs font-semibold text-slate-300 uppercase mb-1">Empresa / Organización:</label>
+          <input type="text" id="diag-company" required placeholder="Ej: Industrias del Norte S.A." class="w-full bg-slate-900 border border-slate-700 rounded-xl px-4 py-2.5 text-white text-sm focus:outline-none focus:border-white">
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <div>
+            <label class="block text-xs font-semibold text-slate-300 uppercase mb-1">Teléfono / WhatsApp:</label>
+            <input type="tel" id="diag-phone" required placeholder="+57 300 000 0000" class="w-full bg-slate-900 border border-slate-700 rounded-xl px-4 py-2.5 text-white text-sm focus:outline-none focus:border-white">
+          </div>
+          <div>
+            <label class="block text-xs font-semibold text-slate-300 uppercase mb-1">Correo Electrónico:</label>
+            <input type="email" id="diag-email" required placeholder="director@empresa.com" class="w-full bg-slate-900 border border-slate-700 rounded-xl px-4 py-2.5 text-white text-sm focus:outline-none focus:border-white">
+          </div>
+        </div>
+
+        <div>
+          <label class="block text-xs font-semibold text-slate-300 uppercase mb-1">Desafío o Fricción Organizacional:</label>
+          <select id="diag-challenge" class="w-full bg-slate-900 border border-slate-700 rounded-xl px-4 py-2.5 text-white text-sm focus:outline-none focus:border-white">
+            <option value="Conflicto en Junta Directiva o Socios">Conflicto en Junta Directiva o Socios</option>
+            <option value="Fuga de Talento o Errores en Procesos">Fuga de Talento, Clima Organizacional o Errores Sistémicos</option>
+            <option value="Estancamiento en Ventas o Negociación">Estancamiento en Cierre de Ventas y Negociaciones</option>
+            <option value="Necesidad de Solución Ecológica & Sostenibilidad">Necesidad de Solución Ecológica & Sostenibilidad ESG</option>
+            <option value="Sé que algo anda mal pero no sé qué es">Sé que algo anda mal en mi organización pero no sé qué es</option>
+          </select>
+        </div>
+
+        <button type="submit" class="w-full btn-bw-white justify-center mt-4">
+          <i data-lucide="send" class="w-4 h-4"></i>
+          Enviar y Abrir WhatsApp con Mauricio
+        </button>
+      </form>
+
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       MODAL 3: MINI CRM DIRECTIVO (LOCALSTORAGE + CSV)
+       ========================================================================== -->
+  <div id="crm-modal" class="fixed inset-0 z-[1000] modal-overlay flex items-center justify-center p-4 hidden">
+    <div class="bg-[#0A0E1A] border border-white/20 rounded-2xl w-full max-w-4xl shadow-2xl overflow-hidden flex flex-col max-h-[85vh]">
+      
+      <div class="bg-[#0F1424] p-5 border-b border-white/10 flex items-center justify-between">
+        <div class="flex items-center gap-3">
+          <div class="w-9 h-9 rounded-lg bg-white/10 text-white flex items-center justify-center">
+            <i data-lucide="database" class="w-5 h-5"></i>
+          </div>
+          <div>
+            <h3 class="font-bold text-white text-base">Panel Directivo CRM — Red Global Consultorías</h3>
+            <p class="text-xs text-slate-400">Prospectos capturados desde el formulario de Diagnóstico Inicial.</p>
+          </div>
+        </div>
+        <div class="flex items-center gap-3">
+          <button id="export-crm-btn" class="bg-white text-black font-bold px-3 py-1.5 rounded-lg text-xs font-mono flex items-center gap-1.5 hover:bg-slate-200 transition">
+            <i data-lucide="download" class="w-3.5 h-3.5"></i> Exportar CSV
+          </button>
+          <button id="close-crm-btn" class="text-slate-400 hover:text-white p-1">
+            <i data-lucide="x" class="w-5 h-5"></i>
+          </button>
+        </div>
+      </div>
+
+      <div class="flex-1 overflow-x-auto p-4">
+        <table class="w-full text-left text-sm">
+          <thead>
+            <tr class="border-b border-white/10 text-xs uppercase font-mono text-slate-400">
+              <th class="py-2.5 px-4">Fecha</th>
+              <th class="py-2.5 px-4">Nombre</th>
+              <th class="py-2.5 px-4">Empresa</th>
+              <th class="py-2.5 px-4">Desafío Identificado</th>
+              <th class="py-2.5 px-4">Teléfono</th>
+              <th class="py-2.5 px-4">Acción</th>
+            </tr>
+          </thead>
+          <tbody id="crm-table-body">
+            <!-- Dinámico -->
+          </tbody>
+        </table>
+      </div>
+
+      <div class="bg-[#0F1424] p-3 border-t border-white/10 text-right text-xs text-slate-500">
+        Base de datos almacenada de forma local y segura en su navegador.
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Lucide & Booking Script -->
+  <script>
+    lucide.createIcons();
+
+    document.getElementById('confirm-booking-btn')?.addEventListener('click', () => {
+      const date = document.getElementById('booking-date').value || 'Fecha a convenir';
+      const topic = document.getElementById('booking-topic').value;
+      const contact = document.getElementById('booking-contact').value || 'Cliente Directivo';
+      const msg = `Hola Mauricio, deseo confirmar una sesión de asesoría directiva.%0A%0A*Contacto:* ${encodeURIComponent(contact)}%0A*Fecha propuesta:* ${encodeURIComponent(date)}%0A*Tema:* ${encodeURIComponent(topic)}`;
+      window.open(`https://wa.me/573182664266?text=${msg}`, '_blank');
+    });
+
+    document.querySelectorAll('.slot-btn').forEach(b => {
+      b.addEventListener('click', () => {
+        document.querySelectorAll('.slot-btn').forEach(btn => btn.classList.remove('bg-white', 'text-black'));
+        b.classList.add('bg-white', 'text-black');
+      });
+    });
+  </script>
+
+  <!-- Main JavaScript File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+</html>

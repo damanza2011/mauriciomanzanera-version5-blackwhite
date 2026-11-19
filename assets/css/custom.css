@@ -1,0 +1,215 @@
+/* ==========================================================================
+   MAURICIO MANZANERA - RED GLOBAL CONSULTORÍAS "MUNDO MEJOR"
+   VERSIÓN 5: BLACK & WHITE MONOCHROME LUXURY (GLOBAL RED SAS STRUCTURE)
+   ========================================================================== */
+
+:root {
+  --bg-black: #05070d;
+  --bg-surface: #0a0e1a;
+  --bg-card: #0f1424;
+  --bg-card-hover: #151c32;
+  
+  --text-white: #ffffff;
+  --text-light: #f1f5f9;
+  --text-slate: #cbd5e1;
+  --text-muted: #94a3b8;
+  
+  --border-hairline: rgba(255, 255, 255, 0.12);
+  --border-strong: rgba(255, 255, 255, 0.28);
+  
+  --font-heading: 'Syne', -apple-system, sans-serif;
+  --font-body: 'Plus Jakarta Sans', -apple-system, sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+}
+
+body {
+  background-color: var(--bg-black);
+  color: var(--text-slate);
+  font-family: var(--font-body);
+  overflow-x: hidden;
+  line-height: 1.6;
+}
+
+h1, h2, h3, h4, .font-heading {
+  font-family: var(--font-heading);
+  color: var(--text-white);
+  letter-spacing: -0.02em;
+}
+
+/* Subtle Monochrome Dot Pattern */
+.bg-monochrome-grid {
+  background-image: radial-gradient(rgba(255, 255, 255, 0.07) 1px, transparent 1px);
+  background-size: 32px 32px;
+}
+
+/* Luxury B&W Pill Buttons */
+.btn-bw-white {
+  background-color: #ffffff;
+  color: #05070d !important;
+  font-weight: 700;
+  border-radius: 9999px;
+  padding: 0.85rem 1.85rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.65rem;
+  transition: all 0.25s ease;
+  box-shadow: 0 4px 18px rgba(255, 255, 255, 0.18);
+  text-decoration: none;
+}
+.btn-bw-white:hover {
+  background-color: #f1f5f9;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 26px rgba(255, 255, 255, 0.28);
+  color: #000000 !important;
+}
+
+.btn-bw-outline {
+  background-color: rgba(255, 255, 255, 0.05);
+  color: #ffffff !important;
+  border: 1px solid var(--border-strong);
+  font-weight: 600;
+  border-radius: 9999px;
+  padding: 0.85rem 1.85rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.65rem;
+  backdrop-filter: blur(8px);
+  transition: all 0.25s ease;
+  text-decoration: none;
+}
+.btn-bw-outline:hover {
+  background-color: #ffffff;
+  color: #05070d !important;
+  border-color: #ffffff;
+  transform: translateY(-2px);
+}
+
+/* Bento Cards (Monochrome High Contrast) */
+.bento-card-bw {
+  background: var(--bg-card);
+  border: 1px solid var(--border-hairline);
+  border-radius: 1.25rem;
+  padding: 1.5rem;
+  transition: all 0.3s ease;
+}
+.bento-card-bw:hover {
+  border-color: var(--border-strong);
+  background: var(--bg-card-hover);
+  transform: translateY(-3px);
+  box-shadow: 0 15px 35px -10px rgba(0, 0, 0, 0.8);
+}
+
+/* High Contrast Social Badges */
+.social-badge-item {
+  color: #ffffff !important;
+  font-weight: 700;
+  font-size: 0.78rem;
+  border-radius: 0.5rem;
+  padding: 0.5rem 0.85rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: all 0.2s ease;
+  text-decoration: none;
+}
+.social-badge-item:hover {
+  transform: translateY(-2px);
+  filter: brightness(1.15);
+}
+
+.social-badge-item.linkedin { background: #0A66C2; }
+.social-badge-item.facebook { background: #1877F2; }
+.social-badge-item.instagram { background: linear-gradient(45deg, #833AB4, #FD1D1D, #FCB045); }
+.social-badge-item.youtube { background: #FF0000; }
+
+/* WhatsApp Floating Button */
+.whatsapp-float-btn {
+  position: fixed;
+  bottom: 24px;
+  left: 24px;
+  z-index: 999;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: #25D366;
+  color: #ffffff;
+  padding: 12px 20px;
+  border-radius: 9999px;
+  font-weight: 700;
+  font-size: 0.9rem;
+  box-shadow: 0 10px 25px rgba(37, 211, 102, 0.4);
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+.whatsapp-float-btn:hover {
+  transform: scale(1.05) translateY(-2px);
+  box-shadow: 0 15px 30px rgba(37, 211, 102, 0.6);
+  color: #ffffff;
+}
+
+.whatsapp-pulse {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 9999px;
+  border: 2px solid #25D366;
+  animation: pulse-ring 2s cubic-bezier(0.215, 0.61, 0.355, 1) infinite;
+}
+
+@keyframes pulse-ring {
+  0% { transform: scale(0.95); opacity: 0.8; }
+  50% { transform: scale(1.25); opacity: 0; }
+  100% { transform: scale(0.95); opacity: 0; }
+}
+
+/* Chatbot Floating Trigger (Habla con Mauro) */
+.chatbot-float-btn {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  z-index: 999;
+}
+
+.chatbot-btn-inner {
+  background: #ffffff;
+  color: #05070d;
+  box-shadow: 0 10px 30px rgba(255, 255, 255, 0.25);
+  transition: all 0.25s ease;
+}
+.chatbot-btn-inner:hover {
+  background: #f1f5f9;
+  transform: scale(1.05);
+  box-shadow: 0 15px 35px rgba(255, 255, 255, 0.4);
+}
+
+/* Language selector active */
+.lang-btn {
+  transition: all 0.2s ease;
+}
+.lang-btn.active {
+  background: #ffffff;
+  color: #05070d !important;
+  font-weight: 700;
+}
+
+/* Modal Backdrops */
+.modal-overlay {
+  background: rgba(5, 7, 13, 0.88);
+  backdrop-filter: blur(14px);
+}
+
+/* RTL Support */
+[dir="rtl"] {
+  text-align: right;
+  direction: rtl;
+}
+[dir="rtl"] .whatsapp-float-btn {
+  left: auto;
+  right: 24px;
+}
+[dir="rtl"] .chatbot-float-btn {
+  right: auto;
+  left: 24px;
+}
